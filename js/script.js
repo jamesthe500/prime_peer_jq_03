@@ -10,7 +10,23 @@ $(document).ready(function() {
 
 	// Start the search here!
 	// search('batman');
+	var values = {};
+
+	//submit button function
+	$("#submitbtn").on("click", function(){
+		var searchterm = $("#searchfield").val();
+		search(searchterm);
+		// searchterm.each(function(){
+		// 	values[this.name] = $(this).val();
+		// 	console.log("testing");
+		// });
+		console.log(searchterm);
+
+	});
 	
+	// event.preventDefault();
+	// var $inputs = $("#submitbtn :input");
+	// search($inputs);
 });
 
 // HELPER FUNCTION
